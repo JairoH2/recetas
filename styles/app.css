@@ -1,0 +1,42 @@
+/*Variables*/
+:root{
+    --fuentePrincipal: 'Montserrat', sans-serif;
+    --colorBase: #F2E3DB;
+    --colorPrimario: #263A29;
+    --colorSecundario: #41644A;
+    --colorTerciario: #E86A33;
+    --colorFondo: rgb(250, 250, 250);
+    --blanco: #ffffff;
+    --negro: #000000;
+    --gris: rgb(29, 29, 29);
+}
+
+/*Configuración Base*/
+html{
+    font-family: var(--fuentePrincipal);
+    background-color: var(--colorFondo);
+    color: var(--gris);
+}
+
+/*Móvil*/
+.recetas__title{
+    text-align: center;
+    margin: 4rem 0;
+}
+.option__container{
+    display: grid;
+    gap: 5rem;
+}
+.menu-card__img{
+    min-height: 30rem;
+    max-height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*Laptop*/
+@media ( min-width: 780px) {
+    .option__container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

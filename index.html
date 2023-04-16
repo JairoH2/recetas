@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/app.css">
+    <title>Recetas Mayo</title>
+</head>
+<body>
+    <h1 class="recetas__title">Recetas</h1>
+    <div class="option__container container">
+        <menu-card>
+            <img src="images/desayuno.jpg" alt="Imagen comida" slot="cardImage" class="menu-card__img">
+            <p slot="cardTitle">Desayuno</p>
+            <a slot="cardButton" href="#">Seleccionar</a>
+        </menu-card>
+        <menu-card>
+            <img src="images/almuerzo.jpg" alt="Imagen comida" slot="cardImage" class="menu-card__img">
+            <p slot="cardTitle">Almuerzo</p>
+            <a slot="cardButton" href="#">Seleccionar</a>
+        </menu-card>
+        <menu-card>
+            <img src="images/cena.jpg" alt="Imagen comida" slot="cardImage" class="menu-card__img">
+            <p slot="cardTitle">Cena</p>
+            <a slot="cardButton" href="#">Seleccionar</a>
+        </menu-card>
+    </div>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
