@@ -1,1 +1,1 @@
-import "../components/menu-card";
+import "../components/menu-card.js";
